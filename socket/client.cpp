@@ -15,7 +15,6 @@ int main(){
     addr.sin_addr.s_addr = inet_addr("서버아이피");
 
     connect(skt, (SOCKADDR*)&addr,sizeof(addr));
-
     closesocket(skt);
     WSACleanup();
     return 0;
