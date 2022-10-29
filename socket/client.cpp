@@ -17,5 +17,4 @@ int main(){
     connect(skt, (SOCKADDR*)&addr,sizeof(addr));
     closesocket(skt);
     WSACleanup();
-    return 0;
 }
